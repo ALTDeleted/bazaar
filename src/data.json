@@ -1,0 +1,1331 @@
+[
+  {
+    "id": "prod_kd6Ll2QyBj5V2m",
+    "created": 1629308516,
+    "updated": 1629371772,
+    "active": true,
+    "permalink": "xfh7F5",
+    "name": "DENNISLINGO PREMIUM ATTIRE",
+    "description": "<ul><li><p>Fabric - 100% Premium Cotton, Pre-Washed for extremely soft finish and Guaranteed 0% Shrinkage Post Washing</p></li><li><p>Style - Enhance your look by wearing this Casual Stylish Men's shirt, Team it with a pair of tapered denims Or Solid Chinos and Loafers for a fun Smart Casual look</p></li><li><p>Fit Type - Modern Slim Fit: A good balance between Comfort and Slim Look. Size chart - S-38, M-40, L-42, XL-44, XXL-46. Please Check the Size chart before Ordering for the Perfect Fit</p></li><li><p>Slim Fit</p></li><li><p>100% Premium Cotton</p></li><li><p>Machine wash</p></li><li><p>Product Code: 462323964062</p></li></ul>",
+    "price": {
+      "raw": 10,
+      "formatted": "10.00",
+      "formatted_with_symbol": "$10.00",
+      "formatted_with_code": "10.00 USD"
+    },
+    "inventory": {
+      "managed": false,
+      "available": 0
+    },
+    "media": {
+      "type": "image",
+      "source": "https://cdn.chec.io/merchants/32044/assets/2WbuYP1JpkpyuRvt|-473Wx593H-462323964-green-MODEL5.webp"
+    },
+    "sku": "Full Sleeves Slim Fit Shirt",
+    "sort_order": 0,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "thank_you_url": null,
+    "meta": null,
+    "conditionals": {
+      "is_active": true,
+      "is_tax_exempt": false,
+      "is_pay_what_you_want": false,
+      "is_inventory_managed": false,
+      "is_sold_out": false,
+      "has_digital_delivery": false,
+      "has_physical_delivery": true,
+      "has_images": true,
+      "has_video": false,
+      "has_rich_embed": false,
+      "collects_fullname": false,
+      "collects_shipping_address": true,
+      "collects_billing_address": false,
+      "collects_extra_fields": false
+    },
+    "is": {
+      "active": true,
+      "tax_exempt": false,
+      "pay_what_you_want": false,
+      "inventory_managed": false,
+      "sold_out": false
+    },
+    "has": {
+      "digital_delivery": false,
+      "physical_delivery": true,
+      "images": true,
+      "video": false,
+      "rich_embed": false
+    },
+    "collects": {
+      "fullname": false,
+      "shipping_address": true,
+      "billing_address": false,
+      "extra_fields": false
+    },
+    "checkout_url": {
+      "checkout": "https://checkout.chec.io/xfh7F5?checkout=true",
+      "display": "https://checkout.chec.io/xfh7F5"
+    },
+    "extra_fields": [],
+    "variant_groups": [
+      {
+        "id": "vgrp_nPEVlNqbJ5a7dM",
+        "name": "Color",
+        "meta": null,
+        "created": 1629367685,
+        "updated": 1629367685,
+        "options": [
+          {
+            "id": "optn_p6dP5gx6Wln7kA",
+            "name": "Red",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629367685,
+            "updated": 1629371772
+          },
+          {
+            "id": "optn_AYrQlW71JlnbR4",
+            "name": "Blue",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629367685,
+            "updated": 1629371772
+          }
+        ]
+      },
+      {
+        "id": "vgrp_9BAmwJDO95eXdn",
+        "name": "Size",
+        "meta": null,
+        "created": 1629367733,
+        "updated": 1629367733,
+        "options": [
+          {
+            "id": "optn_G6kVw77Xdw2eDx",
+            "name": "S",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629367733,
+            "updated": 1629371772
+          },
+          {
+            "id": "optn_O3bR5XmQMlnzdj",
+            "name": "M",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629367733,
+            "updated": 1629371772
+          },
+          {
+            "id": "optn_RyWOwm1VAwnEa2",
+            "name": "L",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629367733,
+            "updated": 1629371772
+          }
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "cat_8XO3wp7PZlYAzQ",
+        "slug": "shirt",
+        "name": "Shirt"
+      },
+      {
+        "id": "cat_zkK6oLMBK5Xn0Q",
+        "slug": "men",
+        "name": "Men"
+      }
+    ],
+    "assets": [
+      {
+        "id": "ast_7ZAMo1LaP2wNJ4",
+        "url": "https://cdn.chec.io/merchants/32044/assets/2WbuYP1JpkpyuRvt|-473Wx593H-462323964-green-MODEL5.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-473Wx593H-462323964-green-MODEL5.webp",
+        "file_size": 33224,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 473,
+          "height": 593
+        },
+        "meta": [],
+        "created_at": 1629308282,
+        "updated_at": 1629308285
+      },
+      {
+        "id": "ast_0YnEoqxa8qwe7P",
+        "url": "https://cdn.chec.io/merchants/32044/assets/a5LUEWIIMIoSgb4e|-78Wx98H-462323964-green-MODEL.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-462323964-green-MODEL.webp",
+        "file_size": 1522,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629308283,
+        "updated_at": 1629308285
+      },
+      {
+        "id": "ast_r2LM5QmJx25ZV1",
+        "url": "https://cdn.chec.io/merchants/32044/assets/re3hK0vCTMMSHbov|-78Wx98H-462323964-green-MODEL3.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-462323964-green-MODEL3.webp",
+        "file_size": 1272,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629308283,
+        "updated_at": 1629308285
+      },
+      {
+        "id": "ast_L1vOoZdgZ2lRa8",
+        "url": "https://cdn.chec.io/merchants/32044/assets/Tl2a1NuenR1k5l1v|-78Wx98H-462323964-green-MODEL2.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-462323964-green-MODEL2.webp",
+        "file_size": 1406,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629308283,
+        "updated_at": 1629308285
+      },
+      {
+        "id": "ast_NXELwjdxpz53A4",
+        "url": "https://cdn.chec.io/merchants/32044/assets/OIJZxrLgvS1tmGQU|-78Wx98H-462323964-green-MODEL4.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-462323964-green-MODEL4.webp",
+        "file_size": 1100,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629308283,
+        "updated_at": 1629308285
+      }
+    ],
+    "related_products": []
+  },
+  {
+    "id": "prod_eN1ql9rzRBwz3y",
+    "created": 1629311417,
+    "updated": 1629371758,
+    "active": true,
+    "permalink": "mLzclc",
+    "name": "Clarkin Low-Top Lace-Up Shoes",
+    "description": "<ul><li><p>Wipe with a clean, dry cloth when needed</p></li><li><p>Lace Fastening</p></li><li><p>Regular Fit</p></li><li><p>3-month warranty against manufacturing defects</p></li><li><p>Canvas upper</p></li><li><p>Rubber sole</p></li><li><p>Product Code: 460934418001</p></li></ul>",
+    "price": {
+      "raw": 26.64,
+      "formatted": "26.64",
+      "formatted_with_symbol": "$26.64",
+      "formatted_with_code": "26.64 USD"
+    },
+    "inventory": {
+      "managed": false,
+      "available": 0
+    },
+    "media": {
+      "type": "image",
+      "source": "https://cdn.chec.io/merchants/32044/assets/kkQ5LhAiBycWg4ir|-78Wx98H-460934418-offwhite-MODEL.webp"
+    },
+    "sku": null,
+    "sort_order": 0,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "thank_you_url": null,
+    "meta": null,
+    "conditionals": {
+      "is_active": true,
+      "is_tax_exempt": false,
+      "is_pay_what_you_want": false,
+      "is_inventory_managed": false,
+      "is_sold_out": false,
+      "has_digital_delivery": false,
+      "has_physical_delivery": false,
+      "has_images": true,
+      "has_video": false,
+      "has_rich_embed": false,
+      "collects_fullname": true,
+      "collects_shipping_address": true,
+      "collects_billing_address": true,
+      "collects_extra_fields": false
+    },
+    "is": {
+      "active": true,
+      "tax_exempt": false,
+      "pay_what_you_want": false,
+      "inventory_managed": false,
+      "sold_out": false
+    },
+    "has": {
+      "digital_delivery": false,
+      "physical_delivery": false,
+      "images": true,
+      "video": false,
+      "rich_embed": false
+    },
+    "collects": {
+      "fullname": true,
+      "shipping_address": true,
+      "billing_address": true,
+      "extra_fields": false
+    },
+    "checkout_url": {
+      "checkout": "https://checkout.chec.io/mLzclc?checkout=true",
+      "display": "https://checkout.chec.io/mLzclc"
+    },
+    "extra_fields": [],
+    "variant_groups": [
+      {
+        "id": "vgrp_gvRjwODXVo4mNL",
+        "name": "Size",
+        "meta": null,
+        "created": 1629371374,
+        "updated": 1629371374,
+        "options": [
+          {
+            "id": "optn_A12Jwr2XXwPjnk",
+            "name": "6 US",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629371374,
+            "updated": 1629371758
+          },
+          {
+            "id": "optn_Op1YoV7kd5XLv9",
+            "name": "7 US",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629371374,
+            "updated": 1629371758
+          },
+          {
+            "id": "optn_4WJvlK7KxlbYV1",
+            "name": "8 US",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629371374,
+            "updated": 1629371758
+          },
+          {
+            "id": "optn_zkK6oL7L1wXn0Q",
+            "name": "9 US",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629371374,
+            "updated": 1629371758
+          }
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "cat_zkK6oLMLv5Xn0Q",
+        "slug": "shoes",
+        "name": "Shoes"
+      },
+      {
+        "id": "cat_zkK6oLMBK5Xn0Q",
+        "slug": "men",
+        "name": "Men"
+      }
+    ],
+    "assets": [
+      {
+        "id": "ast_Kvg9l6vG4nl1bB",
+        "url": "https://cdn.chec.io/merchants/32044/assets/kkQ5LhAiBycWg4ir|-78Wx98H-460934418-offwhite-MODEL.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-460934418-offwhite-MODEL.webp",
+        "file_size": 410,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629311085,
+        "updated_at": 1629311088
+      },
+      {
+        "id": "ast_ypbroExLGmw8n4",
+        "url": "https://cdn.chec.io/merchants/32044/assets/cQRzbDWHhGmnA2SO|-78Wx98H-460934418-offwhite-MODEL2.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-460934418-offwhite-MODEL2.webp",
+        "file_size": 316,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629311085,
+        "updated_at": 1629311088
+      },
+      {
+        "id": "ast_O3bR5Xz2Ngwnzd",
+        "url": "https://cdn.chec.io/merchants/32044/assets/DHKwCWyvWRMA0AYR|-78Wx98H-460934418-offwhite-MODEL3.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-460934418-offwhite-MODEL3.webp",
+        "file_size": 1134,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629311084,
+        "updated_at": 1629311087
+      },
+      {
+        "id": "ast_RyWOwmq6x6wnEa",
+        "url": "https://cdn.chec.io/merchants/32044/assets/lCcacgGZmC6w3tdx|plp.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "plp.webp",
+        "file_size": 1072,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 286,
+          "height": 358
+        },
+        "meta": [],
+        "created_at": 1629311085,
+        "updated_at": 1629311087
+      }
+    ],
+    "related_products": []
+  },
+  {
+    "id": "prod_gvRjwOrydpl4mN",
+    "created": 1629368249,
+    "updated": 1629371749,
+    "active": true,
+    "permalink": "JPTOZl",
+    "name": "Washed Low-Rise Slim Fit Jeans",
+    "description": "<ul><li><p>5-pocket styling</p></li><li><p>Belt loops with button closure</p></li><li><p>Machine wash cold</p></li><li><p>Low Rise</p></li><li><p>100% Cotton</p></li><li><p>Product Code: 460310807001</p></li></ul>",
+    "price": {
+      "raw": 26,
+      "formatted": "26.00",
+      "formatted_with_symbol": "$26.00",
+      "formatted_with_code": "26.00 USD"
+    },
+    "inventory": {
+      "managed": false,
+      "available": 0
+    },
+    "media": {
+      "type": "image",
+      "source": "https://cdn.chec.io/merchants/32044/assets/m0qzYNWGLkknXc5r|-78Wx98H-460310807-blue-MODEL3.webp"
+    },
+    "sku": "460310807001",
+    "sort_order": 0,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "thank_you_url": null,
+    "meta": null,
+    "conditionals": {
+      "is_active": true,
+      "is_tax_exempt": false,
+      "is_pay_what_you_want": false,
+      "is_inventory_managed": false,
+      "is_sold_out": false,
+      "has_digital_delivery": false,
+      "has_physical_delivery": true,
+      "has_images": true,
+      "has_video": false,
+      "has_rich_embed": false,
+      "collects_fullname": false,
+      "collects_shipping_address": true,
+      "collects_billing_address": false,
+      "collects_extra_fields": false
+    },
+    "is": {
+      "active": true,
+      "tax_exempt": false,
+      "pay_what_you_want": false,
+      "inventory_managed": false,
+      "sold_out": false
+    },
+    "has": {
+      "digital_delivery": false,
+      "physical_delivery": true,
+      "images": true,
+      "video": false,
+      "rich_embed": false
+    },
+    "collects": {
+      "fullname": false,
+      "shipping_address": true,
+      "billing_address": false,
+      "extra_fields": false
+    },
+    "checkout_url": {
+      "checkout": "https://checkout.chec.io/JPTOZl?checkout=true",
+      "display": "https://checkout.chec.io/JPTOZl"
+    },
+    "extra_fields": [],
+    "variant_groups": [],
+    "categories": [
+      {
+        "id": "cat_A12JwrQkvlPjnk",
+        "slug": "jeans",
+        "name": "Jeans"
+      },
+      {
+        "id": "cat_zkK6oLMBK5Xn0Q",
+        "slug": "men",
+        "name": "Men"
+      }
+    ],
+    "assets": [
+      {
+        "id": "ast_G6kVw7KQKMw2eD",
+        "url": "https://cdn.chec.io/merchants/32044/assets/m0qzYNWGLkknXc5r|-78Wx98H-460310807-blue-MODEL3.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-460310807-blue-MODEL3.webp",
+        "file_size": 1062,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629368197,
+        "updated_at": 1629368200
+      },
+      {
+        "id": "ast_AYrQlWdqdqwnbR",
+        "url": "https://cdn.chec.io/merchants/32044/assets/RYVvp6l5fFnLClie|-78Wx98H-460310807-blue-MODEL2.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-460310807-blue-MODEL2.webp",
+        "file_size": 1252,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629368197,
+        "updated_at": 1629368200
+      },
+      {
+        "id": "ast_O3bR5XzOzpwnzd",
+        "url": "https://cdn.chec.io/merchants/32044/assets/cnROXDgWb4nmSyEK|-78Wx98H-460310807-blue-MODEL4.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-460310807-blue-MODEL4.webp",
+        "file_size": 1574,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629368197,
+        "updated_at": 1629368200
+      },
+      {
+        "id": "ast_RyWOwmqaqgwnEa",
+        "url": "https://cdn.chec.io/merchants/32044/assets/yZkxMf3zj9yYapcz|-78Wx98H-460310807-blue-MODEL.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-460310807-blue-MODEL.webp",
+        "file_size": 1266,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629368198,
+        "updated_at": 1629368200
+      }
+    ],
+    "related_products": []
+  },
+  {
+    "id": "prod_ZRjywMOx2g57Y8",
+    "created": 1629368470,
+    "updated": 1629371728,
+    "active": true,
+    "permalink": "Zd12GT",
+    "name": "Round Neck Fitted Top",
+    "description": "<p></p><ul><li><p>There may be slight variation in colours due to resolution settings/screen settings/browser capabilities</p></li><li><p>Polyester</p></li><li><p>Dry clean</p></li><li><p>Fitted</p></li><li><p>Product Code: 462238402001</p></li></ul>",
+    "price": {
+      "raw": 6.58,
+      "formatted": "6.58",
+      "formatted_with_symbol": "$6.58",
+      "formatted_with_code": "6.58 USD"
+    },
+    "inventory": {
+      "managed": false,
+      "available": 0
+    },
+    "media": {
+      "type": "image",
+      "source": "https://cdn.chec.io/merchants/32044/assets/bnXEfYz25tp6dhSH|-78Wx98H-462238402-pink-MODEL.webp"
+    },
+    "sku": null,
+    "sort_order": 0,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "thank_you_url": null,
+    "meta": null,
+    "conditionals": {
+      "is_active": true,
+      "is_tax_exempt": false,
+      "is_pay_what_you_want": false,
+      "is_inventory_managed": false,
+      "is_sold_out": false,
+      "has_digital_delivery": false,
+      "has_physical_delivery": true,
+      "has_images": true,
+      "has_video": false,
+      "has_rich_embed": false,
+      "collects_fullname": false,
+      "collects_shipping_address": true,
+      "collects_billing_address": false,
+      "collects_extra_fields": false
+    },
+    "is": {
+      "active": true,
+      "tax_exempt": false,
+      "pay_what_you_want": false,
+      "inventory_managed": false,
+      "sold_out": false
+    },
+    "has": {
+      "digital_delivery": false,
+      "physical_delivery": true,
+      "images": true,
+      "video": false,
+      "rich_embed": false
+    },
+    "collects": {
+      "fullname": false,
+      "shipping_address": true,
+      "billing_address": false,
+      "extra_fields": false
+    },
+    "checkout_url": {
+      "checkout": "https://checkout.chec.io/Zd12GT?checkout=true",
+      "display": "https://checkout.chec.io/Zd12GT"
+    },
+    "extra_fields": [],
+    "variant_groups": [],
+    "categories": [
+      {
+        "id": "cat_Op1YoVz2MoXLv9",
+        "slug": "tops",
+        "name": "Tops"
+      },
+      {
+        "id": "cat_DWy4oGeGjl6Jx2",
+        "slug": "women",
+        "name": "Women"
+      }
+    ],
+    "assets": [
+      {
+        "id": "ast_kpnNwAqQqgwmXB",
+        "url": "https://cdn.chec.io/merchants/32044/assets/bnXEfYz25tp6dhSH|-78Wx98H-462238402-pink-MODEL.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-462238402-pink-MODEL.webp",
+        "file_size": 1926,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629368454,
+        "updated_at": 1629368456
+      },
+      {
+        "id": "ast_8XO3wpdXdEwYAz",
+        "url": "https://cdn.chec.io/merchants/32044/assets/TzrlfVSkNGrx5Daa|-78Wx98H-462238402-pink-MODEL3.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-462238402-pink-MODEL3.webp",
+        "file_size": 1792,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629368454,
+        "updated_at": 1629368456
+      },
+      {
+        "id": "ast_NqKE50OvOPodgB",
+        "url": "https://cdn.chec.io/merchants/32044/assets/lvzRrPzVA9iZAE5d|-78Wx98H-462238402-pink-MODEL2.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-462238402-pink-MODEL2.webp",
+        "file_size": 1858,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629368454,
+        "updated_at": 1629368456
+      },
+      {
+        "id": "ast_bO6J5a8q8XoEjp",
+        "url": "https://cdn.chec.io/merchants/32044/assets/3tUDPqqrsSwKLRA0|-78Wx98H-462238402-pink-MODEL5.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-462238402-pink-MODEL5.webp",
+        "file_size": 1728,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629368455,
+        "updated_at": 1629368456
+      }
+    ],
+    "related_products": []
+  },
+  {
+    "id": "prod_31q0o3LMm25Ddj",
+    "created": 1629368759,
+    "updated": 1629371739,
+    "active": true,
+    "permalink": "q31m1q",
+    "name": "Indian Print Flared Kurta",
+    "description": "<ul><li><p>GOLD PRINT RAYON KURTA</p></li><li><p>PLACEMENT YOKE</p></li><li><p>Rayon</p></li><li><p>Hand wash separately</p></li><li><p>No Darts</p></li><li><p>Product Code: 461828234005</p></li></ul>",
+    "price": {
+      "raw": 7.82,
+      "formatted": "7.82",
+      "formatted_with_symbol": "$7.82",
+      "formatted_with_code": "7.82 USD"
+    },
+    "inventory": {
+      "managed": false,
+      "available": 0
+    },
+    "media": {
+      "type": "image",
+      "source": "https://cdn.chec.io/merchants/32044/assets/J3CJ7KgW1jiRc7gd|-473Wx593H-461828234-green-MODEL6.webp"
+    },
+    "sku": null,
+    "sort_order": 0,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "thank_you_url": null,
+    "meta": null,
+    "conditionals": {
+      "is_active": true,
+      "is_tax_exempt": false,
+      "is_pay_what_you_want": false,
+      "is_inventory_managed": false,
+      "is_sold_out": false,
+      "has_digital_delivery": false,
+      "has_physical_delivery": true,
+      "has_images": true,
+      "has_video": false,
+      "has_rich_embed": false,
+      "collects_fullname": false,
+      "collects_shipping_address": true,
+      "collects_billing_address": false,
+      "collects_extra_fields": false
+    },
+    "is": {
+      "active": true,
+      "tax_exempt": false,
+      "pay_what_you_want": false,
+      "inventory_managed": false,
+      "sold_out": false
+    },
+    "has": {
+      "digital_delivery": false,
+      "physical_delivery": true,
+      "images": true,
+      "video": false,
+      "rich_embed": false
+    },
+    "collects": {
+      "fullname": false,
+      "shipping_address": true,
+      "billing_address": false,
+      "extra_fields": false
+    },
+    "checkout_url": {
+      "checkout": "https://checkout.chec.io/q31m1q?checkout=true",
+      "display": "https://checkout.chec.io/q31m1q"
+    },
+    "extra_fields": [],
+    "variant_groups": [],
+    "categories": [
+      {
+        "id": "cat_bO6J5ax0VoEjpK",
+        "slug": "kurta",
+        "name": "Kurta"
+      },
+      {
+        "id": "cat_DWy4oGeGjl6Jx2",
+        "slug": "women",
+        "name": "Women"
+      }
+    ],
+    "assets": [
+      {
+        "id": "ast_4WJvlKOaOZlbYV",
+        "url": "https://cdn.chec.io/merchants/32044/assets/J3CJ7KgW1jiRc7gd|-473Wx593H-461828234-green-MODEL6.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-473Wx593H-461828234-green-MODEL6.webp",
+        "file_size": 39648,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 473,
+          "height": 593
+        },
+        "meta": [],
+        "created_at": 1629368945,
+        "updated_at": 1629368949
+      },
+      {
+        "id": "ast_Op1YoVEqE4wXLv",
+        "url": "https://cdn.chec.io/merchants/32044/assets/8MnCKC1IepLHycRq|-1117Wx1400H-461828234-green-MODEL4.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-1117Wx1400H-461828234-green-MODEL4.webp",
+        "file_size": 150886,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 1117,
+          "height": 1400
+        },
+        "meta": [],
+        "created_at": 1629368945,
+        "updated_at": 1629368949
+      },
+      {
+        "id": "ast_zkK6oLKrKRwXn0",
+        "url": "https://cdn.chec.io/merchants/32044/assets/cl7Abhjd47c9qSxL|-78Wx98H-461828234-green-MODEL2.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-461828234-green-MODEL2.webp",
+        "file_size": 1440,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629368945,
+        "updated_at": 1629368948
+      },
+      {
+        "id": "ast_DWy4oGy6yYl6Jx",
+        "url": "https://cdn.chec.io/merchants/32044/assets/f6oxw0ffs6WD2KfH|-1117Wx1400H-461828234-green-MODEL6.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-1117Wx1400H-461828234-green-MODEL6.webp",
+        "file_size": 158708,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 1117,
+          "height": 1400
+        },
+        "meta": [],
+        "created_at": 1629368945,
+        "updated_at": 1629368949
+      }
+    ],
+    "related_products": []
+  },
+  {
+    "id": "prod_RyWOwmdRNmlnEa",
+    "created": 1629370105,
+    "updated": 1629370123,
+    "active": true,
+    "permalink": "swLufG",
+    "name": "Slingback Clogs with Cutouts",
+    "description": "<ul><li><p>Wipe with a clean, dry cloth when needed</p></li><li><p>Croslite upper and sole</p></li><li><p>Slip-on styling</p></li><li><p>3-month warranty against manufacturing defects</p></li><li><p>Product Code: 460189090005</p></li></ul>",
+    "price": {
+      "raw": 24.22,
+      "formatted": "24.22",
+      "formatted_with_symbol": "$24.22",
+      "formatted_with_code": "24.22 USD"
+    },
+    "inventory": {
+      "managed": false,
+      "available": 0
+    },
+    "media": {
+      "type": "image",
+      "source": "https://cdn.chec.io/merchants/32044/assets/PDo0TMG4Dx4mRarA|-78Wx98H-460189090-navy-MODEL.webp"
+    },
+    "sku": null,
+    "sort_order": 0,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "thank_you_url": null,
+    "meta": null,
+    "conditionals": {
+      "is_active": true,
+      "is_tax_exempt": false,
+      "is_pay_what_you_want": false,
+      "is_inventory_managed": false,
+      "is_sold_out": false,
+      "has_digital_delivery": false,
+      "has_physical_delivery": true,
+      "has_images": true,
+      "has_video": false,
+      "has_rich_embed": false,
+      "collects_fullname": false,
+      "collects_shipping_address": true,
+      "collects_billing_address": false,
+      "collects_extra_fields": false
+    },
+    "is": {
+      "active": true,
+      "tax_exempt": false,
+      "pay_what_you_want": false,
+      "inventory_managed": false,
+      "sold_out": false
+    },
+    "has": {
+      "digital_delivery": false,
+      "physical_delivery": true,
+      "images": true,
+      "video": false,
+      "rich_embed": false
+    },
+    "collects": {
+      "fullname": false,
+      "shipping_address": true,
+      "billing_address": false,
+      "extra_fields": false
+    },
+    "checkout_url": {
+      "checkout": "https://checkout.chec.io/swLufG?checkout=true",
+      "display": "https://checkout.chec.io/swLufG"
+    },
+    "extra_fields": [],
+    "variant_groups": [
+      {
+        "id": "vgrp_ZM8X5n6MP5pv4q",
+        "name": "Size",
+        "meta": null,
+        "created": 1629371313,
+        "updated": 1629371313,
+        "options": [
+          {
+            "id": "optn_kpnNwA7Ok5mXB3",
+            "name": "10cm",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629371313,
+            "updated": 1629371320
+          },
+          {
+            "id": "optn_8XO3wpZG45YAzQ",
+            "name": "12cm",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629371313,
+            "updated": 1629371320
+          },
+          {
+            "id": "optn_bO6J5aKJywEjpK",
+            "name": "15cm",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629371313,
+            "updated": 1629371320
+          }
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "cat_4WJvlK9xpobYV1",
+        "slug": "kids",
+        "name": "Kids"
+      }
+    ],
+    "assets": [
+      {
+        "id": "ast_bO6J5a8q8AoEjp",
+        "url": "https://cdn.chec.io/merchants/32044/assets/PDo0TMG4Dx4mRarA|-78Wx98H-460189090-navy-MODEL.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-78Wx98H-460189090-navy-MODEL.webp",
+        "file_size": 610,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 78,
+          "height": 98
+        },
+        "meta": [],
+        "created_at": 1629370089,
+        "updated_at": 1629370101
+      },
+      {
+        "id": "ast_kpnNwAqQqrwmXB",
+        "url": "https://cdn.chec.io/merchants/32044/assets/AKsdfT4Xmuzqwu4s|-1117Wx1400H-460189090-navy-MODEL2.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-1117Wx1400H-460189090-navy-MODEL2.webp",
+        "file_size": 43324,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 1117,
+          "height": 1400
+        },
+        "meta": [],
+        "created_at": 1629370088,
+        "updated_at": 1629370102
+      },
+      {
+        "id": "ast_8XO3wpdXdxwYAz",
+        "url": "https://cdn.chec.io/merchants/32044/assets/YMmWBFmuNmHlvTys|-1117Wx1400H-460189090-navy-MODEL4.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-1117Wx1400H-460189090-navy-MODEL4.webp",
+        "file_size": 76128,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 1117,
+          "height": 1400
+        },
+        "meta": [],
+        "created_at": 1629370089,
+        "updated_at": 1629370103
+      },
+      {
+        "id": "ast_A12JwrBGBywPjn",
+        "url": "https://cdn.chec.io/merchants/32044/assets/bGfwXXrq6OgFnH3F|-473Wx593H-460189090-navy-MODEL5.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-473Wx593H-460189090-navy-MODEL5.webp",
+        "file_size": 31590,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 473,
+          "height": 593
+        },
+        "meta": [],
+        "created_at": 1629370089,
+        "updated_at": 1629370091
+      }
+    ],
+    "related_products": []
+  },
+  {
+    "id": "prod_4WJvlKp3Z7wbYV",
+    "created": 1629370986,
+    "updated": 1629371066,
+    "active": true,
+    "permalink": "1WPL8m",
+    "name": "Graphic Print T-shirt & Shorts Set",
+    "description": "<ul><li><p>Raglan sleeves</p></li><li><p>Machine wash</p></li><li><p>100% Cotton</p></li><li><p>Product Code: 460903589001</p></li></ul>",
+    "price": {
+      "raw": 7.66,
+      "formatted": "7.66",
+      "formatted_with_symbol": "$7.66",
+      "formatted_with_code": "7.66 USD"
+    },
+    "inventory": {
+      "managed": false,
+      "available": 0
+    },
+    "media": {
+      "type": "image",
+      "source": "https://cdn.chec.io/merchants/32044/assets/OnH5ySLk0uYtZG0T|1.webp"
+    },
+    "sku": null,
+    "sort_order": 0,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "thank_you_url": null,
+    "meta": null,
+    "conditionals": {
+      "is_active": true,
+      "is_tax_exempt": false,
+      "is_pay_what_you_want": false,
+      "is_inventory_managed": false,
+      "is_sold_out": false,
+      "has_digital_delivery": false,
+      "has_physical_delivery": true,
+      "has_images": true,
+      "has_video": false,
+      "has_rich_embed": false,
+      "collects_fullname": false,
+      "collects_shipping_address": true,
+      "collects_billing_address": false,
+      "collects_extra_fields": false
+    },
+    "is": {
+      "active": true,
+      "tax_exempt": false,
+      "pay_what_you_want": false,
+      "inventory_managed": false,
+      "sold_out": false
+    },
+    "has": {
+      "digital_delivery": false,
+      "physical_delivery": true,
+      "images": true,
+      "video": false,
+      "rich_embed": false
+    },
+    "collects": {
+      "fullname": false,
+      "shipping_address": true,
+      "billing_address": false,
+      "extra_fields": false
+    },
+    "checkout_url": {
+      "checkout": "https://checkout.chec.io/1WPL8m?checkout=true",
+      "display": "https://checkout.chec.io/1WPL8m"
+    },
+    "extra_fields": [],
+    "variant_groups": [
+      {
+        "id": "vgrp_mOVKl4xk3lprRP",
+        "name": "Size",
+        "meta": null,
+        "created": 1629371189,
+        "updated": 1629371189,
+        "options": [
+          {
+            "id": "optn_ypbroE70Pl8n4e",
+            "name": "0-3M",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629371189,
+            "updated": 1629371202
+          },
+          {
+            "id": "optn_Kvg9l67jpw1bB7",
+            "name": "3-6M",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629371189,
+            "updated": 1629371202
+          },
+          {
+            "id": "optn_NqKE507DgodgBL",
+            "name": "6-12M",
+            "price": {
+              "raw": 0,
+              "formatted": "0.00",
+              "formatted_with_symbol": "$0.00",
+              "formatted_with_code": "0.00 USD"
+            },
+            "assets": [],
+            "meta": null,
+            "created": 1629371189,
+            "updated": 1629371202
+          }
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": "cat_4WJvlK9xpobYV1",
+        "slug": "kids",
+        "name": "Kids"
+      }
+    ],
+    "assets": [
+      {
+        "id": "ast_L1vOoZdqKmlRa8",
+        "url": "https://cdn.chec.io/merchants/32044/assets/OnH5ySLk0uYtZG0T|1.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "1.webp",
+        "file_size": 100964,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 1117,
+          "height": 1400
+        },
+        "meta": [],
+        "created_at": 1629371031,
+        "updated_at": 1629371033
+      },
+      {
+        "id": "ast_r2LM5Qm8zR5ZV1",
+        "url": "https://cdn.chec.io/merchants/32044/assets/68LQODWsCfzH7taG|-1117Wx1400H-460903589-seagreen-MODEL5.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-1117Wx1400H-460903589-seagreen-MODEL5.webp",
+        "file_size": 91058,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 1117,
+          "height": 1400
+        },
+        "meta": [],
+        "created_at": 1629371013,
+        "updated_at": 1629371017
+      },
+      {
+        "id": "ast_0YnEoqxLvpwe7P",
+        "url": "https://cdn.chec.io/merchants/32044/assets/YnNcJRCEZY6qA7kr|-1117Wx1400H-460903589-seagreen-MODEL2.jpeg",
+        "description": null,
+        "is_image": true,
+        "filename": "-1117Wx1400H-460903589-seagreen-MODEL2.jpeg",
+        "file_size": 76492,
+        "file_extension": "jpeg",
+        "image_dimensions": {
+          "width": 1117,
+          "height": 1400
+        },
+        "meta": [],
+        "created_at": 1629371031,
+        "updated_at": 1629371034
+      },
+      {
+        "id": "ast_kd6Ll2GxAZwV2m",
+        "url": "https://cdn.chec.io/merchants/32044/assets/KNVhki8BIBwwvMci|-1117Wx1400H-460903589-seagreen-MODEL5.webp",
+        "description": null,
+        "is_image": true,
+        "filename": "-1117Wx1400H-460903589-seagreen-MODEL5.webp",
+        "file_size": 91058,
+        "file_extension": "webp",
+        "image_dimensions": {
+          "width": 1117,
+          "height": 1400
+        },
+        "meta": [],
+        "created_at": 1629371031,
+        "updated_at": 1629371033
+      }
+    ],
+    "related_products": []
+  }
+]

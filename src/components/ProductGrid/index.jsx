@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { getProducts } from "../../redux/actions/products";
-import { addToCart } from "../../redux/actions/cart";
 
 function ProductGrid() {
   const dispatch = useDispatch();

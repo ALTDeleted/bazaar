@@ -1,13 +1,15 @@
 // import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Cart from "./components/cart";
+import Header from "./components/Header/Header";
 import Landing from "./components/Landing";
-import ProductGrid from "./components/ProductGrid";
+import ProductGrid from "./components/ProductGrid/ProductGrid";
 const Routes = () => {
   return (
     <>
       <Router>
+        <Header />
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route exact path="/Cart" component={Cart} />
