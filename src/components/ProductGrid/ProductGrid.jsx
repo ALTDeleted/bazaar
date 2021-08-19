@@ -42,7 +42,6 @@ const ProductGrid = () => {
 };
 
 const GridContainer = styled.div`
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +49,7 @@ const GridContainer = styled.div`
 `;
 
 const FilterBar = styled.div`
-  background-color: #afafaf;
+  background-color: #d3d3d396;
   width: 80vw;
   height: 5em;
   display: flex;
@@ -58,7 +57,6 @@ const FilterBar = styled.div`
 `;
 
 const Grid = styled.div`
-  background-color: #ffffff;
   width: 80vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

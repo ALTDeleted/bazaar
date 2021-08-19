@@ -21,8 +21,8 @@ const Home = ({ imageDetails, image }) => (
               <div className='frame'>
                 {/* <Link to={"/model/bazaar"}> */}
                   <ProgressiveImage
-                    src={require('./images/spidy.jpeg').default}
-                    placeholder={require('./images/spidy-compressed.jpg').default}>
+                    src={require('../images/spidy.jpeg').default}
+                    placeholder={require('../images/spidy-compressed.jpg').default}>
                     {(src) => (
                       <motion.img
                         src={src}

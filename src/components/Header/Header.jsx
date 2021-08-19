@@ -85,13 +85,14 @@ const Head = styled(Slide)`
 `;
 
 const NavContainer = styled.div`
+  z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   width: 100vw;
   height: 100px;
-  background-image: linear-gradient(gray, transparent);
+  background-image: linear-gradient(#000000a6, transparent);
   align-items: center;
   justify-content: center;
   flex-direction: column;
