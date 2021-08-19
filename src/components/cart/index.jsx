@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../../redux/actions/cart";
 const CartItems = styled.div``;
 const CartItemsHeader = styled.div``;
+
 const Cart = () => {
   const c = useSelector((state) => state.cart);
   const dispatch = useDispatch();
@@ -15,8 +16,8 @@ const Cart = () => {
         {c.length === 0 && <div> No Items are added</div>}
         {c.map((item, index) => (
           <div key={index}>
-            <img src={item.image} alt="image" />
-            <div>{item.title}</div>
+            <img src={item.assets[0].url} alt="image" />
+            <div>{item.name}</div>
             <div>
               <h1>{item.quantity}</h1>
               <button

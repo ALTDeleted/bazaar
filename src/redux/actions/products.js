@@ -1,10 +1,13 @@
-import axios from "axios";
+import { commerce } from "../../lib/commerce";
+
 export const getProducts = () => async (dispatch) => {
   try {
-    const res = await axios.get("https://fakestoreapi.com/products");
+    const { data } = await commerce.products.list();
+    console.log("aa gya", data);
+    // const res = await axios.get("https://fakestoreapi.com/products");
     dispatch({
       type: "GET_PRODUCTS",
-      payload: res.data,
+      payload: data,
     });
   } catch (err) {
     console.log(err.message);
