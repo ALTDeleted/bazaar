@@ -127,7 +127,10 @@ const Model = () => {
                   transition={transition}
                 >
                   <motion.img
-                    src={require("./images/spidey.jpeg").default}
+                    // src={require("./images/spidey.jpeg").default}
+                    src={
+                      "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                    }
                     alt="an image"
                     style={{ scale: scale }}
                     initial={{ scale: 1.0 }}

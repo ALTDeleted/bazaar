@@ -1,5 +1,4 @@
 import React from "react";
-import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Model from "./model";
 //components
@@ -12,9 +11,9 @@ function Landing() {
     //   <Route
     //     render={({ location }) => (
     <>
-      <AnimatePresence>
-        <Model />
-      </AnimatePresence>
+      {/* <AnimatePresence> */}
+      <Model />
+      {/* </AnimatePresence> */}
     </>
     //     )}
     //   />

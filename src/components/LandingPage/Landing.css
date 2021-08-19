@@ -145,6 +145,7 @@ main .container .row .image-container .thumbnail .frame img {
 }
 main .container .row .image-container .information {
   position: absolute;
+
   width: 100%;
   display: flex;
   align-items: center;
@@ -184,7 +185,7 @@ main .container .row .image-container .information .location span:nth-child(2) {
   display: inline-block;
   position: relative;
   font-weight: 400;
-  font-size: 224px;
+  font-size: 3.5em;
   font-family: "Maragsa";
 }
 @media (max-width: 1440px) {

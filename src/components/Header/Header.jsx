@@ -6,6 +6,7 @@ import Box from "@material-ui/core/Box";
 import Slide from "@material-ui/core/Slide";
 import { Link } from "react-router-dom";
 import { addToCart } from "../../redux/actions/cart";
+import CartModal from "./CartModal";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -34,7 +35,7 @@ export default function Header(props) {
                 style={{ color: "unset", textDecoration: "none" }}
                 to="/new"
               >
-                What's New
+                New
               </Link>
             </Category>
             <Category>
@@ -61,14 +62,14 @@ export default function Header(props) {
                 Kids
               </Link>
             </Category>
-            <Category>
+            <CategoryCart>
               <Link
                 style={{ color: "unset", textDecoration: "inherit" }}
                 to="/cart"
               >
-                Cart
+                <CartModal />
               </Link>
-            </Category>
+            </CategoryCart>
           </List>
         </NavContainer>
       </HideOnScroll>
@@ -114,4 +115,10 @@ const Category = styled.li`
   margin: -20px 10px 30px 10px;
   text-decoration: none;
   color: inherit;
+`;
+
+const CategoryCart = styled(Category)`
+  position: absolute;
+  top: 2em;
+  right: 2em;
 `;
