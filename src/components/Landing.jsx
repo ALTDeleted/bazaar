@@ -1,12 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
-const Landing = () => {
+import { AnimatePresence } from "framer-motion";
+import { BrowserRouter as Router,Route } from "react-router-dom";
+import Model from "./LandingPage/model";
+//components
+import Header from "./LandingPage/header";
+//Styles
+import "./Landing.css";
+
+function Landing() {
+  
+
   return (
-    <>
-      <div>Landing</div>
-      <Link to="/products">Products</Link>
-    </>
+    <Router>
+          <Header />
+          <Route
+            render={({ location }) => (
+              <AnimatePresence  >
+                    <Model/>
+              </AnimatePresence>
+            )}
+          />
+        </Router>
   );
-};
+}
 
 export default Landing;
