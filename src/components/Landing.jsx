@@ -20,7 +20,7 @@ function Landing() {
               </AnimatePresence>
             )}
           />
-        </Router>
+    </Router>
   );
 }
 
