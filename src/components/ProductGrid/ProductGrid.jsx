@@ -1,48 +1,52 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { getProducts } from "../../redux/actions/products";
 import { addToCart } from "../../redux/actions/cart";
 import Spinner from "../../lib/Spinner";
+import BaseCard from "../../lib/BaseCard";
+import { AnimatePresence, motion } from "framer-motion";
 
 const ProductGrid = () => {
   const dispatch = useDispatch();
 
   const products = useSelector((state) => state.products);
 
-  useEffect(() => {
-    dispatch(getProducts());
-  }, [dispatch]);
-
   return (
-    <>
-      <GridContainer>
-        {products[0] ? (
-          <>
-            <FilterBar>FILTERS</FilterBar>
-            <Grid>
-              {products.map((product) => (
-                <Link
-                  to={`/product/${product.id}`}
-                  style={{ color: "unset", textDecoration: "none" }}
+    <GridContainer>
+      {products[0] ? (
+        <>
+          <FilterBar>FILTERS</FilterBar>
+          <Grid>
+            {products.map((product) => (
+              <AnimatePresence exitBeforeEnter>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
                 >
-                  <Card key={product.id}>
-                    <Image src={product.assets[3].url} alt="" />
-                    <h2>{product.name}</h2>
-                    <button onClick={() => dispatch(addToCart(product))}>
-                      Add to Cart
-                    </button>
-                  </Card>
-                </Link>
-              ))}
-            </Grid>
-          </>
-        ) : (
-          <Spinner />
-        )}
-      </GridContainer>
-    </>
+                  <Link
+                    to={`/product/${product.id}`}
+                    style={{ color: "unset", textDecoration: "none" }}
+                  >
+                    <Card key={product.id}>
+                      <Image src={product.assets[3].url} alt="" />
+                      <h2>{product.name}</h2>
+                      <button onClick={() => dispatch(addToCart(product))}>
+                        Add to Cart
+                      </button>
+                    </Card>
+                  </Link>
+                </motion.div>
+              </AnimatePresence>
+            ))}
+          </Grid>
+        </>
+      ) : (
+        <Spinner />
+      )}
+    </GridContainer>
   );
 };
 
@@ -70,7 +74,7 @@ const Grid = styled.div`
 
 const Card = styled.div`
   display: block;
-  background-color: #e7e7e7;
+  background-color: #bdbdbd;
   width: 100%;
   height: 100%;
   justify-self: center;

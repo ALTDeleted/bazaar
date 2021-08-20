@@ -85,6 +85,7 @@ export default function Header(props) {
 
 const Head = styled(Slide)`
   margin-top: -50px;
+  transition: 0.6s;
 
   :hover {
     background-color: #1a1a1a;
