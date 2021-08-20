@@ -28,11 +28,8 @@ const Routes = () => {
           <Route exact path="/new">
             <ProductGrid />
           </Route>
-
           <Route path="/product/:productId" exact component={ProductPage} />
-
           <Route> 404 NOT Found</Route>
-
         </Switch>
       </Router>
     </>
