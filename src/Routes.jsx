@@ -9,6 +9,7 @@ import OrderHistory from "./components/OrderHistory/OrderHistory";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "./asdw.css";
 import { AnimatePresence } from "framer-motion";
+import ProductPage from "./components/ProductPage/ProductPage";
 
 const Routes = () => {
   return (
@@ -30,6 +31,11 @@ const Routes = () => {
           <Route exact path="/new">
             <ProductGrid />
           </Route>
+
+          <Route path="/product/:productId" exact component={ProductPage} />
+
+          <Route> 404 NOT Found</Route>
+
         </Switch>
         {/* </CSSTransition>
         </TransitionGroup> */}
