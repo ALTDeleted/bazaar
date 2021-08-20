@@ -3,13 +3,21 @@ const initialState = [];
 function cartReducer(state = initialState, { type, payload }) {
   switch (type) {
     case "ADD_TO_CART":
-      const index = state.findIndex((element) => element.id === payload.id);
-      if (index < 0) return [...state, payload];
-      else {
-        state[index].quantity++;
-        return [...state];
-      }
+      return [...state, payload];
 
+    case "INCREMENT":
+      const index = state.findIndex((element) => element.id === payload);
+      state[index].quantity++;
+      return [...state];
+
+    case "DECREMENT":
+      const i = state.findIndex((element) => element.id === payload);
+      state[i].quantity--;
+      return [...state];
+
+    case "REMOVE_FROM_CART":
+      state = state.filter((element) => element.id !== payload);
+      return [...state];
     default:
       return state;
   }

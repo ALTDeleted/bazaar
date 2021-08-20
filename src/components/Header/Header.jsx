@@ -69,12 +69,7 @@ export default function Header(props) {
               </Link>
             </Category>
             <CategoryCart>
-              <Link
-                style={{ color: "unset", textDecoration: "none" }}
-                to="/cart"
-              >
-                <CartModal />
-              </Link>
+              <CartModal />
             </CategoryCart>
           </List>
         </NavContainer>

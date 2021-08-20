@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Popover from "@material-ui/core/Popover";
 import Button from "@material-ui/core/Button";
-import Cart from "../Cart";
+import CartComp from "../Cart/CartComp";
 
 const useStyles = makeStyles((theme) => ({
   typography: {
@@ -49,7 +49,7 @@ export default function CartModal() {
           horizontal: "right",
         }}
       >
-        <Cart />
+        <CartComp />
       </Popover>
     </div>
   );
