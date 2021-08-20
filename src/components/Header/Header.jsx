@@ -86,6 +86,9 @@ const Head = styled(Slide)`
 `;
 
 const NavContainer = styled.div`
+  :hover {
+    height: 20%;
+  }
   z-index: 1000;
   position: fixed;
   top: 0;

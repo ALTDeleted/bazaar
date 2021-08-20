@@ -1,7 +1,7 @@
 // import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import Cart from "./components/cart";
+import CartPage from "./components/Cart/Cart";
 import Header from "./components/Header/Header";
 import Landing from "./components/LandingPage/Landing";
 import ProductGrid from "./components/ProductGrid/ProductGrid";
@@ -21,7 +21,7 @@ const Routes = () => {
             <Landing />
           </Route>
           <Route exact path="/Cart">
-            <Cart />
+            <CartPage />
           </Route>
           <Route exact path="/new">
             <ProductGrid />
