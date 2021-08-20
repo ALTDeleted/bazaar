@@ -21,7 +21,7 @@ export default function Header(props) {
   return (
     <>
       <HideOnScroll {...props}>
-        <NavContainer animate={{ scale: 2 }} transition={{ duration: 0.5 }}>
+        <NavContainer>
           <Title>
             <Link style={{ color: "unset", textDecoration: "inherit" }} to="/">
               Bazaar
@@ -84,10 +84,13 @@ export default function Header(props) {
 }
 
 const Head = styled(Slide)`
+  margin-top: -50px;
+
   :hover {
     background-color: #1a1a1a;
-    background-image: none;
     color: white;
+    transition: 0.6s;
+    margin-top: 0px;
   }
 `;
 
@@ -125,6 +128,6 @@ const Category = styled.li`
 
 const CategoryCart = styled(Category)`
   position: absolute;
-  top: 2em;
+  top: 3em;
   right: 2em;
 `;

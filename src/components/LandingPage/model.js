@@ -14,7 +14,7 @@ const firstName = {
     transition: {
       delayChildren: 0.6,
       staggerChildren: 0.04,
-      staggerDirection: -1,
+      staggerDirection: 1,
     },
   },
 };
@@ -49,9 +49,9 @@ const letter = {
 
 const Model = () => {
   const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1,1]);
 
-  const [canScroll, setCanScroll] = useState(false);
+  const [canScroll, setCanScroll] = useState(true);
 
   useEffect(() => {
     if (canScroll === false) {
@@ -136,7 +136,8 @@ const Model = () => {
                     initial={{ scale: 1.0 }}
                     animate={{
                       transition: { delay: 0.2, ...transition },
-                      y: window.innerWidth > 1440 ? -100 : -600,
+                      // y: window.innerWidth > 1440 ? -100 : -600,
+                      y:1,
                     }}
                   />
                 </motion.div>
@@ -152,6 +153,85 @@ const Model = () => {
               A fresh apporoach to <br /> Shopping.
             </h2>
             <p>
+              Online shopping is a form of electronic commerce which allows
+              consumers to directly buy goods or services from a seller over the
+              Internet using a web browser or a mobile app. Consumers find a
+              product of interest by visiting the website of the retailer
+              directly or by searching among alternative vendors using a
+              shopping search engine, which displays the same product's
+              availability and pricing at different e-retailers. As of 2020,
+              customers can shop online using a range of different computers and
+              devices, including desktop computers, laptops, tablet computers
+              and smartphones.
+              Online shopping is a form of electronic commerce which allows
+              consumers to directly buy goods or services from a seller over the
+              Internet using a web browser or a mobile app. Consumers find a
+              product of interest by visiting the website of the retailer
+              directly or by searching among alternative vendors using a
+              shopping search engine, which displays the same product's
+              availability and pricing at different e-retailers. As of 2020,
+              customers can shop online using a range of different computers and
+              devices, including desktop computers, laptops, tablet computers
+              and smartphones.
+              Online shopping is a form of electronic commerce which allows
+              consumers to directly buy goods or services from a seller over the
+              Internet using a web browser or a mobile app. Consumers find a
+              product of interest by visiting the website of the retailer
+              directly or by searching among alternative vendors using a
+              shopping search engine, which displays the same product's
+              availability and pricing at different e-retailers. As of 2020,
+              customers can shop online using a range of different computers and
+              devices, including desktop computers, laptops, tablet computers
+              and smartphones.
+              Online shopping is a form of electronic commerce which allows
+              consumers to directly buy goods or services from a seller over the
+              Internet using a web browser or a mobile app. Consumers find a
+              product of interest by visiting the website of the retailer
+              directly or by searching among alternative vendors using a
+              shopping search engine, which displays the same product's
+              availability and pricing at different e-retailers. As of 2020,
+              customers can shop online using a range of different computers and
+              devices, including desktop computers, laptops, tablet computers
+              and smartphones.
+              Online shopping is a form of electronic commerce which allows
+              consumers to directly buy goods or services from a seller over the
+              Internet using a web browser or a mobile app. Consumers find a
+              product of interest by visiting the website of the retailer
+              directly or by searching among alternative vendors using a
+              shopping search engine, which displays the same product's
+              availability and pricing at different e-retailers. As of 2020,
+              customers can shop online using a range of different computers and
+              devices, including desktop computers, laptops, tablet computers
+              and smartphones.Online shopping is a form of electronic commerce which allows
+              consumers to directly buy goods or services from a seller over the
+              Internet using a web browser or a mobile app. Consumers find a
+              product of interest by visiting the website of the retailer
+              directly or by searching among alternative vendors using a
+              shopping search engine, which displays the same product's
+              availability and pricing at different e-retailers. As of 2020,
+              customers can shop online using a range of different computers and
+              devices, including desktop computers, laptops, tablet computers
+              and smartphones.
+              Online shopping is a form of electronic commerce which allows
+              consumers to directly buy goods or services from a seller over the
+              Internet using a web browser or a mobile app. Consumers find a
+              product of interest by visiting the website of the retailer
+              directly or by searching among alternative vendors using a
+              shopping search engine, which displays the same product's
+              availability and pricing at different e-retailers. As of 2020,
+              customers can shop online using a range of different computers and
+              devices, including desktop computers, laptops, tablet computers
+              and smartphones.
+              Online shopping is a form of electronic commerce which allows
+              consumers to directly buy goods or services from a seller over the
+              Internet using a web browser or a mobile app. Consumers find a
+              product of interest by visiting the website of the retailer
+              directly or by searching among alternative vendors using a
+              shopping search engine, which displays the same product's
+              availability and pricing at different e-retailers. As of 2020,
+              customers can shop online using a range of different computers and
+              devices, including desktop computers, laptops, tablet computers
+              and smartphones.
               Online shopping is a form of electronic commerce which allows
               consumers to directly buy goods or services from a seller over the
               Internet using a web browser or a mobile app. Consumers find a
