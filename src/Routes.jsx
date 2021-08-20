@@ -1,7 +1,7 @@
 // import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import Cart from "./components/cart";
+import Cart from "./components/Cart";
 import Header from "./components/Header/Header";
 import Landing from "./components/LandingPage/Landing";
 import ProductGrid from "./components/ProductGrid/ProductGrid";
