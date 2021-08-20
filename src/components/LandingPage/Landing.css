@@ -8,16 +8,16 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #f7971e; /* fallback for old browsers */
+  background-color: #d6d6d6; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
-    #ffd200,
-    #f7971e
+    #ffffff,
+    #c5c5c5
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to bottom,
-    #ffd200,
-    #f7971e
+    #f8f8f8,
+    #d8d8d8
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   color: #1e1f13;

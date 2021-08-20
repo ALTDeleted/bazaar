@@ -31,7 +31,7 @@ export default function CartModal() {
       <Button
         aria-describedby={id}
         variant="contained"
-        color="primary"
+        color="secondary"
         onMouseOver={handleClick}
       >
         🛍️ Bag

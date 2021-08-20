@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Typography from "@material-ui/core/Typography";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import Box from "@material-ui/core/Box";
 import Slide from "@material-ui/core/Slide";
 import { Link } from "react-router-dom";
-import { addToCart } from "../../redux/actions/cart";
 import CartModal from "./CartModal";
+import { motion } from "framer-motion";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -23,7 +21,7 @@ export default function Header(props) {
   return (
     <>
       <HideOnScroll {...props}>
-        <NavContainer>
+        <NavContainer animate={{ scale: 2 }} transition={{ duration: 0.5 }}>
           <Title>
             <Link style={{ color: "unset", textDecoration: "inherit" }} to="/">
               Bazaar
@@ -62,9 +60,17 @@ export default function Header(props) {
                 Kids
               </Link>
             </Category>
+            <Category>
+              <Link
+                style={{ color: "unset", textDecoration: "none" }}
+                to="/history"
+              >
+                Order
+              </Link>
+            </Category>
             <CategoryCart>
               <Link
-                style={{ color: "unset", textDecoration: "inherit" }}
+                style={{ color: "unset", textDecoration: "none" }}
                 to="/cart"
               >
                 <CartModal />
