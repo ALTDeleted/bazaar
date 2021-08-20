@@ -8,13 +8,13 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #f8efe7; /* fallback for old browsers */
+  background-color: #ffffff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
-    #f8efe7,
-    #f8efe7
+    #d8d8d8,
+    #c2c2c2
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #f8efe7 0%, #f8efe7 100%);
+  background: linear-gradient(to bottom, #ececec 0%, #dadada 100%);
 
   color: #1e1f13;
 }
@@ -59,7 +59,7 @@ body.no-scroll {
 .container {
   /* flex-grow: 1; */
   margin: 0 auto;
-  padding: 0 ;
+  padding: 0;
   position: relative;
   width: auto;
   min-height: 300px;
@@ -68,7 +68,7 @@ body.no-scroll {
 .container.fluid {
   /* max-width: 100rem; */
   max-width: 100%;
-  padding: 0 ;
+  padding: 0;
 }
 @media (min-width: 1024px) {
   .container {
@@ -106,7 +106,6 @@ main .container .row {
 }
 main .container .row .image-container {
   position: relative;
-  
 }
 main .container .row .image-container .thumbnail {
   overflow: hidden;
@@ -152,7 +151,7 @@ main .container .row .image-container .information .location span:nth-child(2) {
   text-transform: uppercase;
 }
 /* .single .container .top-row .top .model {
-  
+
 } */
 .single .container .top-row .top .model {
   overflow: hidden;
@@ -223,4 +222,4 @@ main .container .row .image-container .information .location span:nth-child(2) {
   line-height: 28px;
   /* font-weight: 400; */
   max-width: 500px;
-} 
+}
