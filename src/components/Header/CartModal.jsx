@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Popover from "@material-ui/core/Popover";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import Cart from "../cart";
+import Cart from "../Cart";
 
 const useStyles = makeStyles((theme) => ({
   typography: {
@@ -28,14 +28,14 @@ export default function CartModal() {
 
   return (
     <div>
-      <Button
+      <p
         aria-describedby={id}
         variant="contained"
-        color="primary"
+        color="secondary"
         onMouseOver={handleClick}
       >
         🛍️ Bag
-      </Button>
+      </p>
       <Popover
         id={id}
         open={open}

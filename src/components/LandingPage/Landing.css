@@ -8,8 +8,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #f8efe7
-  ; /* fallback for old browsers */
+  background-color: #f8efe7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
     #f8efe7,
