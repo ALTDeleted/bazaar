@@ -49,7 +49,7 @@ const letter = {
 
 const Model = () => {
   const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [1,1.15]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1,1]);
 
   const [canScroll, setCanScroll] = useState(true);
 

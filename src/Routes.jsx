@@ -6,7 +6,7 @@ import {
   Switch,
   useLocation,
 } from "react-router-dom";
-import CartPage from "./components/Cart/Cart";
+import CartPage from "./components/Cart/CartPage";
 import Header from "./components/Header/Header";
 import Landing from "./components/LandingPage/Landing";
 import ProductGrid from "./components/ProductGrid/ProductGrid";
@@ -32,7 +32,7 @@ const Routes = () => {
               <Landing />
             </motion.div>
           </Route>
-          <Route exact path="/Cart">
+          <Route exact path="/cart">
             <motion.div
               initial={{ opacity: 0, y: 200 }}
               animate={{ opacity: 1 }}
