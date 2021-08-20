@@ -6,7 +6,6 @@ import Header from "./components/Header/Header";
 import Landing from "./components/LandingPage/Landing";
 import ProductGrid from "./components/ProductGrid/ProductGrid";
 import OrderHistory from "./components/OrderHistory/OrderHistory";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "./asdw.css";
 import { AnimatePresence } from "framer-motion";
 
@@ -15,8 +14,6 @@ const Routes = () => {
     <>
       <Router>
         <Header />
-        {/* <TransitionGroup>
-          <CSSTransition classNames="fade" timeout={300}> */}
         <Switch>
           <Route exact path="/">
             <Landing />
@@ -31,8 +28,6 @@ const Routes = () => {
             <ProductGrid />
           </Route>
         </Switch>
-        {/* </CSSTransition>
-        </TransitionGroup> */}
       </Router>
     </>
   );

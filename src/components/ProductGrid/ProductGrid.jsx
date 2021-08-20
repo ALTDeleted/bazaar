@@ -24,7 +24,7 @@ const ProductGrid = () => {
             <Grid>
               {products.map((product) => (
                 <Card key={product.id}>
-                  <Image src={product.assets[0].url} alt="" />
+                  <Image src={product.assets[3].url} alt="" />
                   <h2>{product.name}</h2>
                   <button onClick={() => dispatch(addToCart(product))}>
                     Add to Cart

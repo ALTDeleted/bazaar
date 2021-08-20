@@ -28,14 +28,14 @@ export default function CartModal() {
 
   return (
     <div>
-      <Button
+      <p
         aria-describedby={id}
         variant="contained"
         color="secondary"
         onMouseOver={handleClick}
       >
         🛍️ Bag
-      </Button>
+      </p>
       <Popover
         id={id}
         open={open}
