@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import { commerce } from "../../lib/commerce";
+import Spinner from "../../lib/Spinner";
 
+import StarBorderIcon from '@material-ui/icons/StarBorder';
+import StarIcon from '@material-ui/icons/Star';
+import PersonIcon from '@material-ui/icons/Person';
 
 export default function ProductPage() {
     const [products, setProducts] = useState([]);
@@ -14,12 +18,13 @@ export default function ProductPage() {
     useEffect(() => {
         fetchProducts();
     }, []);
-
+    var sizes = ["S","M","L","XL"];
+    const [currSize,setCurrSize] = useState("M");
     const [cartCount, setCartCount] = useState(0);
     return (<>
         {
             (products.length === 0 || !products[0].id)
-                ? (<div style={{ width: "100vw", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>Loading...</div>)
+                ? (<Spinner/>)
                 :
                 (
                     <div className="mainContainer" style={{marginTop:"125px"}}>
@@ -40,28 +45,31 @@ export default function ProductPage() {
                             <div className="pData pDetails">
                                 <h2 className="ProductTitle">{products[0].name}</h2>
                                 <hr/>
-                                <div className="productDesciption" dangerouslySetInnerHTML={{ __html: products[0].description }} >{ }</div>
+                                <span className="productDesciption" dangerouslySetInnerHTML={{ __html: products[0].description }} >{ }</span>
                                 <div className="pDataMain">
                                     <div className="pDataC price">
-                                        Price : <br /> {products[0].price.formatted_with_code}
+                                        <b>Price :</b> <br /> {products[0].price.formatted_with_code}
                                     </div>
                                     <div className="pDataC color">
-                                        Color : <br />
+                                        <b>Color :</b> <br />
                                         <div className="colorChoose red"></div>
                                         <div className="colorChoose blue"></div>
                                         <div className="colorChoose green"></div>
                                     </div>
                                     <div className="pDataC size">
-                                        Size :
+                                        <b>Size :</b>
                                         <br />
-                                        <span class="">S</span> <span class="pAcive">M</span> L XL
+                                        {sizes.map(size => (<>
+                                            <span style={{cursor:"pointer"}} onClick={()=> {setCurrSize(size)}} className=
+                                            {`${(size === currSize)?"pActive":""}`}>{size}</span>{" "}
+                                        </>))}
                                     </div>
                                 </div>
 
                                 <div className="pDataMain cart-options">
                                     <div className="counter-cart">
-                                        <div className="counter pDataC-btn" onClick={() => { if (cartCount <= 1) return; setCartCount(cartCount - 1) }}>-</div>
-                                        <div className="counter counter-val">{cartCount}</div>
+                                        <div className="counter pDataC-btn" onClick={() => { if (cartCount <= 0) return; setCartCount(cartCount - 1) }}>-</div>
+                                        <div style={{borderTop:"1px solid #1f1f1f",borderBottom:"1px solid #1f1f1f"}} className="counter counter-val">{cartCount}</div>
                                         <div className="counter pDataC-btn" onClick={() => { setCartCount(cartCount + 1) }}>+</div>
                                     </div>
                                     <button className="pDataC-btn">Add To Cart</button>
@@ -70,17 +78,17 @@ export default function ProductPage() {
                                 <hr />
                                 <br />
                                 <h4>REVIEWS</h4>
-                                <br />
-                                <div pReviews pStars>
-                                    🌟🌟🌟⭐⭐
+                                {/* <br /> */}
+                                <div className="pReviews pStars">
+                                    <StarIcon /><StarIcon /><StarIcon /><StarBorderIcon /><StarBorderIcon />
                                 </div>
                                 <br/>
-                                <b>Random Aadmi</b>
-                                <p>&nbsp;&nbsp; Mast hai vro lele isko ... 👉👈</p>
+                                <PersonIcon/><b>John Doe</b>
+                                <p>&nbsp;&nbsp; Don't know why these are too OP.</p>
                             
                                 <br />
-                                <b>Random Aadmi 2</b>
-                                <p>&nbsp;&nbsp; Mat le vro Chutiya bana rhaa hai...</p>
+                                <span><PersonIcon /><b>Vijay Malya</b></span>
+                                <p>&nbsp;&nbsp; This site is best.. I bought a 1000 rs note just at 2000 rs</p>
                             
                             </div>
                             <div className="pData pPhoto">
