@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -10,52 +11,42 @@ import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
-  },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: 'rotate(180deg)',
-  },
-  avatar: {
-    backgroundColor: red[500],
-  },
-}));
 
-export default function BaseCard(product) {
-  const classes = useStyles();
+const BaseCard = ({ title, image }) => {
 
-  return (
-    <Card className={classes.root}>
-      <CardMedia
-        className={classes.media}
-        image={product.image}
-        title={product.title}
-      />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {product.title}
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-      </CardActions>
-    </Card>
-  );
+    return (
+        <div className="container page-wrapper">
+            <div className="page-inner">
+                <div className="row">
+                    <div className="el-wrapper">
+                        <div className="box-up">
+                            <img className="img" src={image} alt={title} />
+                            <div className="img-info">
+                                <div className="info-inner">
+                                    <span className="p-name">{title }</span>
+                                    <span className="p-company">Yeezy</span>
+                                </div>
+                                <div className="a-size">Available sizes : <span className="size">S , M , L , XL</span></div>
+                            </div>
+                        </div>
+
+                        <div className="box-down">
+                            <div className="h-bg">
+                                <div className="h-bg-inner"></div>
+                            </div>
+
+                            <a className="cart" href="#">
+                                <span className="price">$120</span>
+                                <span className="add-to-cart">
+                                    <span className="txt">Add in cart</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 }
+
+export default BaseCard;
