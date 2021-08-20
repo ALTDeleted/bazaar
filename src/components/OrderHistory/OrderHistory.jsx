@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BaseCard from "../../lib/BaseCard";
 
 const OrderHistory = () => {
     const [state, setState] = useState([
@@ -14,13 +15,7 @@ const OrderHistory = () => {
         </header>
         <div className="order-history">
             {state.map(order => (
-                <div className="order" key={order.id}>
-                    <img src={order.image} alt={order.title} />
-                    <div className="order-details">
-                        <h4>{ order.title} </h4>
-                        <h4>{ order.price} $</h4>
-                    </div>
-                </div>    
+                <BaseCard order={ order}/>
             ))}
         </div>
     </div>
