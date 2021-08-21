@@ -41,11 +41,11 @@ export default function CartModal() {
         anchorEl={anchorEl}
         onClose={handleClose}
         anchorOrigin={{
-          vertical: "center",
+          vertical: "top",
           horizontal: "left",
         }}
         transformOrigin={{
-          vertical: "center",
+          vertical: "top",
           horizontal: "right",
         }}
       >

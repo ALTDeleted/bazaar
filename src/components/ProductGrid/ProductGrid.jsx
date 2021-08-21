@@ -123,6 +123,7 @@ const Button = styled(motion.button)`
   font-weight: 500;
   border-radius: 5px;
   bottom: 0;
+  cursor: pointer;
 `;
 
 export default ProductGrid;

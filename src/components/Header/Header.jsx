@@ -158,7 +158,7 @@ const Category = styled.li`
 const CategoryCart = styled(Category)`
   position: fixed;
   transition: 0.6;
-  top: 50%;
+  bottom: -2em;
   right: 1em;
   z-index: 1000;
   @media only screen and (max-width: 600px) {
