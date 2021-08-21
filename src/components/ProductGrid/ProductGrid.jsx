@@ -22,6 +22,7 @@ const ProductGrid = () => {
     >
       {products[0] ? (
         <>
+          <h1>Products</h1>
           <FilterBar>FILTERS</FilterBar>
           <Grid
             as={motion.div}
@@ -37,15 +38,6 @@ const ProductGrid = () => {
                     to={`/product/${product.id}`}
                     style={{ color: "unset", textDecoration: "none" }}
                   >
-<<<<<<< HEAD
-                    <Card key={product.id}>
-                      <Image src={product.assets[0].url} alt="" />
-                      <h2>{product.name}</h2>
-                      <button onClick={() => dispatch(addToCart(product))}>
-                        Add to Cart
-                      </button>
-                    </Card>
-=======
                     <Image
                       as={motion.img}
                       initial={{ opacity: 0 }}
@@ -55,7 +47,6 @@ const ProductGrid = () => {
                       src={product.assets[0].url}
                       alt=""
                     />
->>>>>>> ad90d607babb1315d455901a758bb4c6faaeaefc
                   </Link>
                   <h2>{product.name}</h2>
                   <Button
@@ -106,7 +97,7 @@ const Grid = styled(motion.div)`
 const Card = styled(motion.div)`
   display: block;
   padding: 1px;
-  background-color: #c5c5c5;
+  background-color: #dfdfdf;
   position: relative;
   width: 100%;
   height: 100%;

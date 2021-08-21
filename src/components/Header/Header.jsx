@@ -83,20 +83,9 @@ export default function Header(props) {
                 Order
               </Link>
             </Category>
-<<<<<<< HEAD
             <CategoryCart>
               <CartModal />
             </CategoryCart>
-=======
-            <Category>
-              <Link
-                style={{ color: "unset", textDecoration: "none" }}
-                to="/cart"
-              >
-                Cart
-              </Link>
-            </Category>
->>>>>>> ad90d607babb1315d455901a758bb4c6faaeaefc
           </List>
         </NavContainer>
       </HideOnScroll>

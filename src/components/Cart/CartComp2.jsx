@@ -4,29 +4,30 @@ import { useSelector, useDispatch } from "react-redux";
 import { addToCart, decrement, increment } from "../../redux/actions/cart";
 
 const CartItems = styled.div`
-  width: 100%;
-  max-width: 400px;
-  height: auto;
+  width: 1100px;
+  /* height: auto; */
   display: flex;
   flex-direction: column;
-  margin: auto;
+  /* margin: auto; */
   > h1 {
     align-self: center;
     margin-bottom: 30px;
   }
 `;
 const CartItem = styled.div`
+  border: 1px solid black;
+  height: 400px;
   display: flex;
   margin-bottom: 30px;
 `;
 const Item = styled.div`
   width: 400px;
-  padding: 1px;
+  padding: 20px;
   > img {
-    height: auto;
-    width: 100%;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
-    margin-bottom: 1px;
+    margin-bottom: 20px;
   }
   > div {
     font-size: 24px;
@@ -36,14 +37,14 @@ const Item = styled.div`
 const Functions = styled.div`
   display: flex;
   width: 400px;
-  height: 500px;
+  /* height: 500px; */
   align-items: center;
   justify-content: center;
 `;
 const Price = styled.h1`
   display: flex;
   width: 200px;
-  height: 500px;
+  /* height: 500px; */
   align-items: center;
   justify-content: center;
 `;
@@ -52,7 +53,7 @@ const Increase = styled.button`
   width: 50px;
   border: none;
   border-radius: 30px;
-  margin: 0 1px;
+  margin: 10px;
   cursor: pointer;
 `;
 const Decrease = styled.button`
@@ -60,8 +61,25 @@ const Decrease = styled.button`
   width: 50px;
   border: none;
   border-radius: 30px;
-  margin: 1px;
+  margin: 10px;
   cursor: pointer;
+`;
+const Card = styled.div`
+  display: flex;
+  padding: 30px;
+  height: 300px;
+  > h1 {
+    font-size: 25px;
+    border-bottom: 1px #fff solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
 `;
 
 const CartComp = () => {
@@ -75,23 +93,11 @@ const CartComp = () => {
         {c.length === 0 && <div> No Items are added</div>}
         {c.map((item, index) => (
           <CartItem key={index}>
-            <div key={index} className="card">
-              <Item>
-                <img src={item.assets[0].url} alt="image" />
-              </Item>
-              <div className="card-back">
-                <h1>{item.name}</h1>
-              </div>
-            </div>
+            <Card>
+              <img src={item.assets[0].url} alt="image" />
+              <h1>{item.name}</h1>
+            </Card>
             <Functions>
-              <Increase
-                onClick={() => {
-                  dispatch(increment(item.id));
-                }}
-              >
-                +
-              </Increase>
-              <h1>{item.quantity}</h1>
               <Decrease
                 onClick={() => {
                   dispatch(decrement(item.id, item.quantity));
@@ -99,6 +105,16 @@ const CartComp = () => {
               >
                 -
               </Decrease>
+
+              <h1> {item.quantity}</h1>
+
+              <Increase
+                onClick={() => {
+                  dispatch(increment(item.id));
+                }}
+              >
+                +
+              </Increase>
             </Functions>
             <Price>₹ {item.quantity * item.price.raw}</Price>
           </CartItem>
