@@ -4,7 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { addToCart, decrement, increment } from "../../redux/actions/cart";
 
 const CartItems = styled.div`
-  width: 1100px;
+  width: 100%;
+  max-width: 400px;
   /* height: auto; */
   display: flex;
   flex-direction: column;
@@ -15,55 +16,19 @@ const CartItems = styled.div`
   }
 `;
 const CartItem = styled.div`
-  border: 1px solid black;
+  margin: 20px;
+  /* border: 1px solid black; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   height: 400px;
   display: flex;
   margin-bottom: 30px;
-`;
-const Item = styled.div`
-  width: 400px;
-  padding: 20px;
-  > img {
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  > div {
-    font-size: 24px;
-    font-weight: 700;
+  @media (min-width: 500px) {
+    flex-direction: column;
+    height: 100%;
   }
 `;
-const Functions = styled.div`
-  display: flex;
-  width: 400px;
-  /* height: 500px; */
-  align-items: center;
-  justify-content: center;
-`;
-const Price = styled.h1`
-  display: flex;
-  width: 200px;
-  /* height: 500px; */
-  align-items: center;
-  justify-content: center;
-`;
-const Increase = styled.button`
-  height: 50px;
-  width: 50px;
-  border: none;
-  border-radius: 30px;
-  margin: 10px;
-  cursor: pointer;
-`;
-const Decrease = styled.button`
-  height: 50px;
-  width: 50px;
-  border: none;
-  border-radius: 30px;
-  margin: 10px;
-  cursor: pointer;
-`;
+
 const Card = styled.div`
   display: flex;
   padding: 30px;
@@ -79,6 +44,41 @@ const Card = styled.div`
     height: 300px;
     object-fit: cover;
     margin-right: 30px;
+  }
+  @media (min-width: 500px) {
+    flex-direction: column;
+    h1 {
+      align-self: center;
+    }
+  }
+`;
+const Functions = styled.div`
+  display: flex;
+  width: 400px;
+  /* height: 500px; */
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 500px) {
+    margin-top: 100px;
+  }
+`;
+
+const Button = styled.button`
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+`;
+const Price = styled.h1`
+  display: flex;
+  width: 200px;
+  /* height: 500px; */
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 500px) {
+    align-self: center;
   }
 `;
 
@@ -98,23 +98,23 @@ const CartComp = () => {
               <h1>{item.name}</h1>
             </Card>
             <Functions>
-              <Decrease
+              <Button
                 onClick={() => {
                   dispatch(decrement(item.id, item.quantity));
                 }}
               >
                 -
-              </Decrease>
+              </Button>
 
               <h1> {item.quantity}</h1>
 
-              <Increase
+              <Button
                 onClick={() => {
                   dispatch(increment(item.id));
                 }}
               >
                 +
-              </Increase>
+              </Button>
             </Functions>
             <Price>₹ {item.quantity * item.price.raw}</Price>
           </CartItem>

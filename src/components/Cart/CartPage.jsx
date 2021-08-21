@@ -15,53 +15,55 @@ const CartItems = styled.div`
   }
 `;
 const CartItem = styled.div`
-  border: 1px solid black;
+  margin: 20px;
+  /* border: 1px solid black; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  height: 400px;
   display: flex;
   margin-bottom: 30px;
-`;
-const Item = styled.div`
-  width: 400px;
-  padding: 20px;
-  > img {
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  > div {
-    font-size: 24px;
-    font-weight: 700;
-  }
 `;
 const Functions = styled.div`
   display: flex;
   width: 400px;
-  height: 500px;
+  flex-direction: column;
+  /* height: 500px; */
   align-items: center;
   justify-content: center;
 `;
 const Price = styled.h1`
   display: flex;
   width: 200px;
-  height: 500px;
+  /* height: 500px; */
   align-items: center;
   justify-content: center;
 `;
-const Increase = styled.button`
+const Button = styled.button`
   height: 50px;
   width: 50px;
   border: none;
   border-radius: 30px;
-  margin: 0 20px;
+  margin: 10px;
   cursor: pointer;
+  padding: 10px;
 `;
-const Decrease = styled.button`
-  height: 50px;
-  width: 50px;
-  border: none;
-  border-radius: 30px;
-  margin: 20px;
-  cursor: pointer;
+
+const Card = styled.div`
+  display: flex;
+  padding: 30px;
+  height: 300px;
+  > h1 {
+    font-size: 25px;
+    border-bottom: 1px #fff solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
 `;
 
 const CartPage = () => {
@@ -74,33 +76,27 @@ const CartPage = () => {
         {c.length === 0 && <div> No Items are added</div>}
         {c.map((item, index) => (
           <CartItem key={index}>
-            <div key={index} className="card">
-              <div className="card-inner">
-                <div className="card-front">
-                  <img src={item.assets[0].url} alt="image" />
-                </div>
-                <div className="card-back">
-                  <h1>{item.name}</h1>
-                  <p>{item.description}</p>
-                </div>
-              </div>
-            </div>
+            <Card>
+              <img src={item.assets[0].url} alt="image" />
+              <h1>{item.name}</h1>
+            </Card>
             <Functions>
-              <Increase
+              <Button
                 onClick={() => {
                   dispatch(increment(item.id));
                 }}
               >
-                +
-              </Increase>
-              <h1>{item.quantity}</h1>
-              <Decrease
+                <h1>+</h1>
+              </Button>
+
+              <h1> {item.quantity}</h1>
+              <Button
                 onClick={() => {
                   dispatch(decrement(item.id, item.quantity));
                 }}
               >
-                -
-              </Decrease>
+                <h1>-</h1>
+              </Button>
             </Functions>
             <Price>₹ {item.quantity * item.price.raw}</Price>
           </CartItem>
