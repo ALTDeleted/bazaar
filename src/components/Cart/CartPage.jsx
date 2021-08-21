@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart, decrement, increment } from "../../redux/actions/cart";
+import { Link } from "react-router-dom";
 
 const CartItems = styled.div`
   width: 100%;
@@ -105,6 +106,7 @@ const CartPage = () => {
           </CartItem>
         ))}
       </CartItems>
+      <Link to="/checkout">Checkout</Link>
     </>
   );
 };
