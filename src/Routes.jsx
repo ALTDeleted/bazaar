@@ -1,19 +1,12 @@
-// import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import React, { useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  useLocation,
-} from "react-router-dom";
+import React from "react";
+import { Route, Switch, useLocation } from "react-router-dom";
 import CartPage from "./components/Cart/CartPage";
-import Header from "./components/Header/Header";
 import Landing from "./components/LandingPage/Landing";
 import ProductGrid from "./components/ProductGrid/ProductGrid";
 import OrderHistory from "./components/OrderHistory/OrderHistory";
 import "./asdw.css";
 import { motion, AnimatePresence } from "framer-motion";
-import ProductPage2 from "./components/ProductPage/ProductPage2";
+import ProductPage from "./components/ProductPage/ProductPage";
 import Spinner from "./lib/Spinner";
 
 const Routes = () => {
@@ -21,94 +14,111 @@ const Routes = () => {
 
   return (
     <AnimatePresence exitBeforeEnter>
-      <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            <motion.div
-              initial={{ opacity: 0, y: 200 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Landing />
-            </motion.div>
-          </Route>
-          <Route exact path="/cart">
-            <motion.div
-              initial={{ opacity: 0, y: 200 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <CartPage />
-            </motion.div>
-          </Route>
-          <Route exact path="/history">
-            <motion.div
-              initial={{ opacity: 0, y: 200 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <OrderHistory />
-            </motion.div>
-          </Route>
-          <Route exact path="/new">
-            <motion.div
-              initial={{ opacity: 0, y: 200 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <ProductGrid />
-            </motion.div>
-          </Route>
-          <Route path="/product/:productId" exact>
-            <motion.div
-              initial={{ opacity: 0, y: 200 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <ProductPage2 />
-            </motion.div>
-          </Route>
-          <Route path="/men" exact>
-            <motion.div
-              initial={{ opacity: 0, y: 200 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Spinner />
-            </motion.div>
-          </Route>
-          <Route path="/women" exact>
-            <motion.div
-              initial={{ opacity: 0, y: 200 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Spinner />
-            </motion.div>
-          </Route>
-          {/* <Route path="/kids" exact>
-            <motion.div
-              initial={{ opacity: 0, y: 200 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Spinner />
-            </motion.div>
-          </Route> */}
-          {/* <Route>
-            <div>404 NOT Found</div>
-          </Route> */}
-        </Switch>
-      </Router>
+      <Switch location={location} key={location.pathname}>
+        <Route exact path="/">
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Landing />
+          </motion.div>
+        </Route>
+        <Route exact path="/cart">
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
+          >
+            <CartPage />
+          </motion.div>
+        </Route>
+        <Route exact path="/history">
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
+          >
+            <OrderHistory />
+          </motion.div>
+        </Route>
+        <Route exact path="/new">
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
+          >
+            <ProductGrid />
+          </motion.div>
+        </Route>
+        <Route path="/product/:productId" exact>
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
+          >
+            <ProductPage />
+          </motion.div>
+        </Route>
+        <Route path="/men" exact>
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Spinner />
+          </motion.div>
+        </Route>
+        <Route path="/women" exact>
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Spinner />
+          </motion.div>
+        </Route>
+        {/* <Route path="/kids" exact>
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Spinner />
+          </motion.div>
+        </Route> */}
+        <Route path="/history" exact>
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
+          >
+            <OrderHistory />
+          </motion.div>
+        </Route>
+        <Route path="/cart" exact>
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
+          >
+            <CartPage />
+          </motion.div>
+        </Route>
+        <Route>
+          <div>404 NOT Found</div>
+        </Route>
+      </Switch>
     </AnimatePresence>
   );
 };

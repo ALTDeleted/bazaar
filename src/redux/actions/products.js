@@ -2,7 +2,7 @@ import { commerce } from "../../lib/commerce";
 
 export const getProducts = () => async (dispatch) => {
   try {
-    const { data } = await commerce.products.list();
+    const { data } = await commerce.products.list({ limit: 100 });
     console.log("aa gya", data);
     // const res = await axios.get("https://fakestoreapi.com/products");
     dispatch({

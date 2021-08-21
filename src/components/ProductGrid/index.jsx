@@ -7,7 +7,9 @@ function ProductGrid() {
   useEffect(() => {
     dispatch(getProducts());
   }, [dispatch]);
+
   const products = useSelector((state) => state.products);
+
   console.log(products);
   if (products.length === 0) return <div>Loading</div>;
   else

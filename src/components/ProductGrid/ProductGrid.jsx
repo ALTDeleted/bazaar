@@ -6,6 +6,7 @@ import { addToCart } from "../../redux/actions/cart";
 import Spinner from "../../lib/Spinner";
 import BaseCard from "../../lib/BaseCard";
 import { AnimatePresence, motion } from "framer-motion";
+import FilterBar from "./FilterBar";
 
 const ProductGrid = () => {
   const dispatch = useDispatch();
@@ -22,8 +23,8 @@ const ProductGrid = () => {
     >
       {products[0] ? (
         <>
+          <FilterBar />
           <h1>Products</h1>
-          <FilterBar>FILTERS</FilterBar>
           <Grid
             as={motion.div}
             initial={{ opacity: 0 }}
@@ -31,8 +32,8 @@ const ProductGrid = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            {products.map((product) => (
-              <AnimatePresence exitBeforeEnter>
+            <AnimatePresence exitBeforeEnter>
+              {products.map((product) => (
                 <Card key={product.id}>
                   <Link
                     to={`/product/${product.id}`}
@@ -60,8 +61,8 @@ const ProductGrid = () => {
                     Add to Cart
                   </Button>
                 </Card>
-              </AnimatePresence>
-            ))}
+              ))}
+            </AnimatePresence>
           </Grid>
         </>
       ) : (
@@ -79,13 +80,13 @@ const GridContainer = styled(motion.div)`
   justify-content: center;
 `;
 
-const FilterBar = styled(motion.div)`
-  background-color: #d3d3d396;
-  width: 90vw;
-  height: 5em;
-  display: flex;
-  margin: 0 0 20px 0;
-`;
+// const FilterBar = styled(motion.div)`
+//   background-color: #d3d3d396;
+//   width: 90vw;
+//   height: 5em;
+//   display: flex;
+//   margin: 0 0 20px 0;
+// `;
 
 const Grid = styled(motion.div)`
   width: 80vw;
