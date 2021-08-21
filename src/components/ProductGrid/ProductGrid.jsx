@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -11,7 +11,13 @@ import FilterBar from "./FilterBar";
 const ProductGrid = () => {
   const dispatch = useDispatch();
 
-  const products = useSelector((state) => state.products);
+  // const productsData = useSelector((state) => state.products);
+
+  const [products, setProducts] = React.useState([]);
+
+  // useEffect(() => {
+  //   setProducts(productsData);
+  // }, [productsData]);
 
   return (
     <GridContainer
@@ -21,9 +27,9 @@ const ProductGrid = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+      <FilterBar products={products} setProducts={setProducts} />
       {products[0] ? (
         <>
-          <FilterBar />
           <h1>Products</h1>
           <Grid
             as={motion.div}
