@@ -5,7 +5,7 @@ import { addToCart, decrement, increment } from "../../redux/actions/cart";
 
 const CartItems = styled.div`
   width: 400px;
-  height: 400px;
+  height: auto;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -15,18 +15,17 @@ const CartItems = styled.div`
   }
 `;
 const CartItem = styled.div`
-  border: 1px solid black;
   display: flex;
   margin-bottom: 30px;
 `;
 const Item = styled.div`
   width: 400px;
-  padding: 20px;
+  padding: 1px;
   > img {
-    height: 300px;
-    width: 300px;
+    height: auto;
+    width: 100%;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
   }
   > div {
     font-size: 24px;
@@ -52,7 +51,7 @@ const Increase = styled.button`
   width: 50px;
   border: none;
   border-radius: 30px;
-  margin: 0 20px;
+  margin: 0 1px;
   cursor: pointer;
 `;
 const Decrease = styled.button`
@@ -60,9 +59,10 @@ const Decrease = styled.button`
   width: 50px;
   border: none;
   border-radius: 30px;
-  margin: 20px;
+  margin: 1px;
   cursor: pointer;
 `;
+
 const CartComp = () => {
   const c = useSelector((state) => state.cart);
   const dispatch = useDispatch();
@@ -75,14 +75,11 @@ const CartComp = () => {
         {c.map((item, index) => (
           <CartItem key={index}>
             <div key={index} className="card">
-              <div className="card-inner">
-                <div className="card-front">
-                  <img src={item.assets[0].url} alt="image" />
-                </div>
-                <div className="card-back">
-                  <h1>{item.name}</h1>
-                  <p>{item.description}</p>
-                </div>
+              <Item>
+                <img src={item.assets[0].url} alt="image" />
+              </Item>
+              <div className="card-back">
+                <h1>{item.name}</h1>
               </div>
             </div>
             <Functions>
