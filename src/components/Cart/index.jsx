@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart, decrement, increment } from "../../redux/actions/cart";
-import { Link } from "react-router-dom";
-
 const CartItems = styled.div`
   width: 100%;
   height: 100%;
@@ -63,10 +61,10 @@ const Decrease = styled.button`
   margin: 20px;
   cursor: pointer;
 `;
-
-const CartPage = () => {
+const Cart = () => {
   const c = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+  console.log("c");
   return (
     <>
       <CartItems>
@@ -106,9 +104,8 @@ const CartPage = () => {
           </CartItem>
         ))}
       </CartItems>
-      <Link to="/checkout">Checkout</Link>
     </>
   );
 };
 
-export default CartPage;
+export default Cart;
