@@ -19,8 +19,8 @@ const Routes = () => {
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -200 }}
-            transition={{ duration: 0.5 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
           >
             <Landing />
           </motion.div>
@@ -29,8 +29,8 @@ const Routes = () => {
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -200 }}
-            transition={{ duration: 0.5 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
           >
             <CartPage />
           </motion.div>
@@ -39,8 +39,8 @@ const Routes = () => {
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -200 }}
-            transition={{ duration: 0.5 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
           >
             <OrderHistory />
           </motion.div>
@@ -49,8 +49,8 @@ const Routes = () => {
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -200 }}
-            transition={{ duration: 0.5 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
           >
             <ProductGrid />
           </motion.div>
@@ -59,8 +59,8 @@ const Routes = () => {
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -200 }}
-            transition={{ duration: 0.5 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
           >
             <ProductPage />
           </motion.div>
@@ -69,8 +69,8 @@ const Routes = () => {
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -200 }}
-            transition={{ duration: 0.5 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
           >
             <Spinner />
           </motion.div>
@@ -79,25 +79,25 @@ const Routes = () => {
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -200 }}
-            transition={{ duration: 0.5 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
           >
             <Spinner />
           </motion.div>
         </Route>
-        {/* <Route path="/kids" exact>
-            <motion.div
-              initial={{ opacity: 0, y: 200 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Spinner />
-            </motion.div>
-          </Route> */}
-        {/* <Route>
-            <div>404 NOT Found</div>
-          </Route> */}
+        <Route path="/kids" exact>
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 200 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Spinner />
+          </motion.div>
+        </Route>
+        <Route>
+          <div>404 NOT Found</div>
+        </Route>
       </Switch>
     </AnimatePresence>
   );

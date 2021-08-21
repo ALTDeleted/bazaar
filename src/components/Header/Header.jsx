@@ -83,6 +83,14 @@ export default function Header(props) {
                 Order
               </Link>
             </Category>
+            <Category>
+              <Link
+                style={{ color: "unset", textDecoration: "none" }}
+                to="/cart"
+              >
+                Cart
+              </Link>
+            </Category>
           </List>
         </NavContainer>
       </HideOnScroll>
@@ -95,6 +103,7 @@ export default function Header(props) {
 
 const Head = styled(Slide)`
   position: absolute;
+  color: #444444;
   top: 0;
   /* transition: 0.6;
   margin-top: -50px;
@@ -149,8 +158,8 @@ const Category = styled.li`
 const CategoryCart = styled(Category)`
   position: fixed;
   transition: 0.6;
-  top: 110px;
-  right: 2em;
+  top: 50%;
+  right: 1em;
   z-index: 1000;
   @media only screen and (max-width: 600px) {
     display: none;
