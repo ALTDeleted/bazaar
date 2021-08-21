@@ -35,7 +35,7 @@ const BaseCard = ({ title, image }) => {
                                 <div className="h-bg-inner"></div>
                             </div>
 
-                            <a className="cart" href="#">
+                            <a className="cart" href="/">
                                 <span className="price">$120</span>
                                 <span className="add-to-cart">
                                     <span className="txt">Add in cart</span>
