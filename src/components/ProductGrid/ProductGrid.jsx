@@ -8,7 +8,7 @@ import BaseCard from "../../lib/BaseCard";
 import { AnimatePresence, motion } from "framer-motion";
 import FilterBar from "./FilterBar";
 
-const ProductGrid = () => {
+const ProductGrid = (props) => {
   const dispatch = useDispatch();
 
   // const productsData = useSelector((state) => state.products);
@@ -27,7 +27,11 @@ const ProductGrid = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <FilterBar products={products} setProducts={setProducts} />
+      <FilterBar
+        filters={props.filters}
+        products={products}
+        setProducts={setProducts}
+      />
       {products[0] ? (
         <>
           <h1>Products</h1>

@@ -22,8 +22,8 @@ export default function Filterbar(props) {
   const { products, setProducts } = props;
 
   const classes = useStyles();
-  const [itemType, setItemType] = React.useState("Type");
-  const [itemType2, setItemType2] = React.useState("Type");
+  const [itemType, setItemType] = React.useState(props.filters[0]);
+  const [itemType2, setItemType2] = React.useState(props.filters[1]);
 
   const handleChange = (event) => {
     setItemType(event.target.value);
