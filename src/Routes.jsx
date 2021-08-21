@@ -6,7 +6,7 @@ import ProductGrid from "./components/ProductGrid/ProductGrid";
 import OrderHistory from "./components/OrderHistory/OrderHistory";
 import "./asdw.css";
 import { motion, AnimatePresence } from "framer-motion";
-import ProductPage from "./components/ProductPage/ProductPage";
+import ProductPage2 from "./components/ProductPage/ProductPage2";
 import Spinner from "./lib/Spinner";
 
 const Routes = () => {
@@ -62,7 +62,7 @@ const Routes = () => {
             exit={{ opacity: 0, y: 200 }}
             transition={{ duration: 0.2 }}
           >
-            <ProductPage />
+            <ProductPage2 />
           </motion.div>
         </Route>
         <Route path="/men" exact>

@@ -22,6 +22,7 @@ const ProductGrid = () => {
     >
       {products[0] ? (
         <>
+          <h1>Products</h1>
           <FilterBar>FILTERS</FilterBar>
           <Grid
             as={motion.div}
@@ -96,7 +97,7 @@ const Grid = styled(motion.div)`
 const Card = styled(motion.div)`
   display: block;
   padding: 1px;
-  background-color: #c5c5c5;
+  background-color: #dfdfdf;
   position: relative;
   width: 100%;
   height: 100%;

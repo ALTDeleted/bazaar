@@ -4,7 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { addToCart, decrement, increment } from "../../redux/actions/cart";
 
 const CartItems = styled.div`
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: auto;
   display: flex;
   flex-direction: column;
