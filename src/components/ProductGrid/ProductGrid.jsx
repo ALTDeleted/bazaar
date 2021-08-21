@@ -13,23 +13,31 @@ const ProductGrid = () => {
   const products = useSelector((state) => state.products);
 
   return (
-    <GridContainer>
+    <GridContainer
+      as={motion.div}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       {products[0] ? (
         <>
           <FilterBar>FILTERS</FilterBar>
-          <Grid>
+          <Grid
+            as={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             {products.map((product) => (
               <AnimatePresence exitBeforeEnter>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.5 }}
-                >
+                <Card key={product.id}>
                   <Link
                     to={`/product/${product.id}`}
                     style={{ color: "unset", textDecoration: "none" }}
                   >
+<<<<<<< HEAD
                     <Card key={product.id}>
                       <Image src={product.assets[0].url} alt="" />
                       <h2>{product.name}</h2>
@@ -37,8 +45,30 @@ const ProductGrid = () => {
                         Add to Cart
                       </button>
                     </Card>
+=======
+                    <Image
+                      as={motion.img}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.5 }}
+                      src={product.assets[0].url}
+                      alt=""
+                    />
+>>>>>>> ad90d607babb1315d455901a758bb4c6faaeaefc
                   </Link>
-                </motion.div>
+                  <h2>{product.name}</h2>
+                  <Button
+                    as={motion.button}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                    onClick={() => dispatch(addToCart(product))}
+                  >
+                    Add to Cart
+                  </Button>
+                </Card>
               </AnimatePresence>
             ))}
           </Grid>
@@ -50,42 +80,58 @@ const ProductGrid = () => {
   );
 };
 
-const GridContainer = styled.div`
+const GridContainer = styled(motion.div)`
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
 
-const FilterBar = styled.div`
+const FilterBar = styled(motion.div)`
   background-color: #d3d3d396;
-  width: 80vw;
+  width: 90vw;
   height: 5em;
   display: flex;
   margin: 0 0 20px 0;
 `;
 
-const Grid = styled.div`
+const Grid = styled(motion.div)`
   width: 80vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2em;
 `;
 
-const Card = styled.div`
+const Card = styled(motion.div)`
   display: block;
-  background-color: #bdbdbd;
+  padding: 1px;
+  background-color: #c5c5c5;
+  position: relative;
   width: 100%;
   height: 100%;
   justify-self: center;
+  margin: auto;
 `;
 
-const Image = styled.img`
-  object-fit: fill;
-  min-height: 15px;
-  min-width: 150px;
-  max-width: 400px;
-  max-height: 400px;
+const Image = styled(motion.img)`
+  object-fit: cover;
+  height: auto;
+  min-width: 100px;
+  max-width: 100%;
+`;
+
+const Button = styled(motion.button)`
+  min-width: 50px;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 500;
+  border-radius: 5px;
+  bottom: 0;
 `;
 
 export default ProductGrid;

@@ -33,7 +33,7 @@ export default function CartModal() {
         color="secondary"
         onMouseOver={handleClick}
       >
-        🛍️ Bag
+        🛍️
       </p>
       <Popover
         id={id}
@@ -41,11 +41,11 @@ export default function CartModal() {
         anchorEl={anchorEl}
         onClose={handleClose}
         anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "right",
+          vertical: "center",
+          horizontal: "left",
         }}
         transformOrigin={{
-          vertical: "top",
+          vertical: "center",
           horizontal: "right",
         }}
       >

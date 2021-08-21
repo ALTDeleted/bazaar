@@ -5,7 +5,11 @@ import { addToCart, decrement, increment } from "../../redux/actions/cart";
 
 const CartItems = styled.div`
   width: 400px;
+<<<<<<< HEAD
   height: 400px;
+=======
+  height: auto;
+>>>>>>> ad90d607babb1315d455901a758bb4c6faaeaefc
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -15,18 +19,30 @@ const CartItems = styled.div`
   }
 `;
 const CartItem = styled.div`
+<<<<<<< HEAD
   border: 1px solid black;
+=======
+>>>>>>> ad90d607babb1315d455901a758bb4c6faaeaefc
   display: flex;
   margin-bottom: 30px;
 `;
 const Item = styled.div`
   width: 400px;
+<<<<<<< HEAD
   padding: 20px;
   > img {
     height: 300px;
     width: 300px;
     object-fit: cover;
     margin-bottom: 20px;
+=======
+  padding: 1px;
+  > img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1px;
+>>>>>>> ad90d607babb1315d455901a758bb4c6faaeaefc
   }
   > div {
     font-size: 24px;
@@ -52,7 +68,11 @@ const Increase = styled.button`
   width: 50px;
   border: none;
   border-radius: 30px;
+<<<<<<< HEAD
   margin: 0 20px;
+=======
+  margin: 0 1px;
+>>>>>>> ad90d607babb1315d455901a758bb4c6faaeaefc
   cursor: pointer;
 `;
 const Decrease = styled.button`
@@ -60,9 +80,16 @@ const Decrease = styled.button`
   width: 50px;
   border: none;
   border-radius: 30px;
+<<<<<<< HEAD
   margin: 20px;
   cursor: pointer;
 `;
+=======
+  margin: 1px;
+  cursor: pointer;
+`;
+
+>>>>>>> ad90d607babb1315d455901a758bb4c6faaeaefc
 const CartComp = () => {
   const c = useSelector((state) => state.cart);
   const dispatch = useDispatch();
@@ -75,6 +102,7 @@ const CartComp = () => {
         {c.map((item, index) => (
           <CartItem key={index}>
             <div key={index} className="card">
+<<<<<<< HEAD
               <div className="card-inner">
                 <div className="card-front">
                   <img src={item.assets[0].url} alt="image" />
@@ -83,6 +111,13 @@ const CartComp = () => {
                   <h1>{item.name}</h1>
                   <p>{item.description}</p>
                 </div>
+=======
+              <Item>
+                <img src={item.assets[0].url} alt="image" />
+              </Item>
+              <div className="card-back">
+                <h1>{item.name}</h1>
+>>>>>>> ad90d607babb1315d455901a758bb4c6faaeaefc
               </div>
             </div>
             <Functions>
