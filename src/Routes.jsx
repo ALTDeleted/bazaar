@@ -52,7 +52,7 @@ const Routes = () => {
             exit={{ opacity: 0, y: 200 }}
             transition={{ duration: 0.2 }}
           >
-            <ProductGrid />
+            <ProductGrid filters={["Type", "Type"]} />
           </motion.div>
         </Route>
         <Route path="/product/:productId" exact>
@@ -72,7 +72,7 @@ const Routes = () => {
             exit={{ opacity: 0, y: 200 }}
             transition={{ duration: 0.2 }}
           >
-            <Spinner />
+            <ProductGrid filters={["Type", "Men"]} />
           </motion.div>
         </Route>
         <Route path="/women" exact>
@@ -82,19 +82,19 @@ const Routes = () => {
             exit={{ opacity: 0, y: 200 }}
             transition={{ duration: 0.2 }}
           >
-            <Spinner />
+            <ProductGrid filters={["Type", "Women"]} />
           </motion.div>
         </Route>
-        {/* <Route path="/kids" exact>
+        <Route path="/decor" exact>
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 200 }}
             transition={{ duration: 0.2 }}
           >
-            <Spinner />
+            <ProductGrid filters={["Type", "Home Decor"]} />
           </motion.div>
-        </Route> */}
+        </Route>
         <Route path="/history" exact>
           <motion.div
             initial={{ opacity: 0, y: -200 }}

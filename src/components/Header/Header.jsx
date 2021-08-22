@@ -70,9 +70,9 @@ export default function Header(props) {
             <Category>
               <Link
                 style={{ color: "unset", textDecoration: "none" }}
-                to="/kids"
+                to="/decor"
               >
-                Kids
+                Decor
               </Link>
             </Category>
             <Category>
