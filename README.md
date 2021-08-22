@@ -1,6 +1,6 @@
 ## Live Demonstration
 
-The E-commerce demo can be [viewed online here](https://jb-ecommerce-demo.herokuapp.com/).
+The Bazaar demo can be [viewed online here](https://bazaar-at.netlify.app/).
 
 Here are screenshots that show the Bazaar demo application in use.
 
@@ -40,5 +40,6 @@ npm start
 ## Tech Stack
 * React.js
 * commerce.js
+* Framer Motion
 
 
